@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+int fb(int);//声明 
+int main()
+{
+	int n,m;
+	cin>>m;
+	for(int i=1;i<=m;i++)
+	{
+		
+		cin>>n;
+		cout<<fb(n)<<endl;//调用 
+		
+		
+	
+	}
+}
+int fb(int l)//定义 
+	  {
+			if(l==1) return 1;
+			if(l==2) return 1;
+			if(l==0) return 1;
+			return(fb(l-1)+fb(l-2));
+	  }
